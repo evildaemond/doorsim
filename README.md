@@ -4,7 +4,7 @@ An Open-Source Door Simulator for PACS Training
 
 ## Description
 
-The DoorSim is a modified PACS (Physical Access Control System) built for research, training, and CTFs in RFID Physical Security. 
+The DoorSim is a Open Source PACS (Physical Access Control System) built for research, training, and CTFs on RFID and Physical Security.
 
 ## Features
 
@@ -85,9 +85,11 @@ Soldering guide assumes minimal soldering experience and only through hole const
 ### Programming
 
 1. Install Arduino IDE
-1. Install Required Libaries
-    1. ESP32 Library
-    1. Drag and Drop Library that is not in Arduino (i2c 2004a library)
+1. Install Requirements
+    1. ESP32 Board Manager
+    2. AsyncJson
+    3. ESPAsyncWebServer
+    4. LiquidCrystal_I2C
 1. Git Clone and Open File
 1. Choose Board, Choose Port
 1. Click Upload
@@ -159,3 +161,8 @@ Soldering guide assumes minimal soldering experience and only through hole const
 - Web Interface shows all data in Last Swiped Cards 
 - Web Interface CTF Board will show HEX of cards swiped
 
+
+## Acknowledgements
+
+- Core Weigand and card decoding based upon [Tusk](https://github.com/TeamWalrus/tusk) 
+- Design inspiration by [RTA Door Simulator](https://shop.redteamalliance.com/products/rfid-hacking-and-defense-physical-access-control-systems-pacs-proxmark3-training)
