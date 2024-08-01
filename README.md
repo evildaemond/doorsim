@@ -65,7 +65,7 @@ Soldering guide assumes minimal soldering experience and only through hole const
 1. Insert legs of the ESP32-WROOM-32D Development Board into PCB
 ![step2](meta/DSC02540-min.JPG)
 1. Apply flux and solder legs in place, apply light pressure from the back on the development board and start at each corner, try to keep the board flat
-![step3]meta/DSC02546-min.JPG
+![step3](meta/DSC02546-min.JPG)
 1. Trim down the pins legs to roughly 2mm (078740157 Inches) and clean any leftover residue lightly with isopropyl alcohol and a old toothbrush
 ![step4](meta/DSC02559-min.JPG)
 1. Fit the male-to-male header pins between the 2004a display and the PCB, with the longer side facing up
