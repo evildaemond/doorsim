@@ -69,8 +69,7 @@ Soldering guide assumes minimal soldering experience and only through hole const
 1. Flip over the board, applying pressure on the same sides, and do the same on the 2004a display side.
 1. Solder in the rest of the pins
 1. Trim the PCB Side of the pin legs to roughly 2mm (078740157 Inches) and clean any leftover residue lightly with isopropyl alcohol and a old toothbrush
-
-1. Optional: In some cases, you may need to trim or elongate the wires for the USB-PD Connector, recommendation is to measure and cut, remove old wire connectors from board, and tin the ends before inserting and screwing into terminal connectors
+1. *Optional:* In some cases, you may need to trim or elongate the wires for the USB-PD Connector, recommendation is to measure and cut, remove old wire connectors from board, and tin the ends before inserting and screwing into terminal connectors
 
 ### Case
 
