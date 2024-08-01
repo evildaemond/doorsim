@@ -6,8 +6,7 @@ The DoorSim is a Open Source PACS (Physical Access Control System) built for res
 
 ## Features
 
-- Custom PCB Design
-- ESP32 Base
+- Custom PCB with ESP32 Base
 - Wiegand interface with Industry Standard Connectors
 - 2004a Display for Ease of Reading
 - Web Interface for Card/Event Reading and Settings
@@ -22,12 +21,12 @@ The DoorSim is a Open Source PACS (Physical Access Control System) built for res
 
 |Quantity|Name|Link|
 |---|---|---|
-|1|PCB||
-|1|ESP32-WROOM-32D Development Board|https://www.aliexpress.com/item/1005006476877078.html|
-|1|2004A Display (Bare without i2c converter)|https://www.aliexpress.com/item/1005005973980073.html?spm=a2g0o.order_list.order_list_main.22.3d051802PKVqRJ|
-|1|USB-C PD Trigger Board|https://www.aliexpress.com/item/1005004381460387.html|
+|1|PCB|![Repo Link](Hardware/PCB)|
+|1|ESP32-WROOM-32D Development Board|<https://www.aliexpress.com/item/1005006476877078.html>|
+|1|2004A Display (Bare without i2c converter)|<https://www.aliexpress.com/item/1005005973980073.html?spm=a2g0o.order_list.order_list_main.22.3d051802PKVqRJ>|
+|1|USB-C PD Trigger Board|<https://www.aliexpress.com/item/1005004381460387.html>|
 |3|5.0-2P Screw Terminal Blocks|<https://www.lcsc.com/product-detail/Screw-terminal_Cixi-Kefa-Elec-KF332K-5-0-2P_C474889.html>|
-|1|2.54mm 1x16 male-male header pins|https://www.aliexpress.com/item/1005001514058091.html|
+|1|2.54mm 1x16 male-male header pins|<https://www.aliexpress.com/item/1005001514058091.html>|
 
 ### Cases
 
