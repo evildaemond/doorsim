@@ -2,6 +2,8 @@
 
 The DoorSim is a Open Source PACS (Physical Access Control System) built for research, training, and CTFs on RFID and Physical Security. 
 
+![doorsim](https://github.com/evildaemond/doorsim/blob/main/meta/20240801_150329.jpg)
+
 ## Features
 
 - Custom PCB Design
@@ -60,15 +62,26 @@ The DoorSim is a Open Source PACS (Physical Access Control System) built for res
 Soldering guide assumes minimal soldering experience and only through hole construction
 
 1. Collect all required items in Main Board Bill of Materials
+![step1](meta/DSC02535-min.JPG)
 1. Insert legs of the ESP32-WROOM-32D Development Board into PCB
+![step2](meta/DSC02540-min.JPG)
 1. Apply flux and solder legs in place, apply light pressure from the back on the development board and start at each corner, try to keep the board flat
+![step3]meta/DSC02546-min.JPG
 1. Trim down the pins legs to roughly 2mm (078740157 Inches) and clean any leftover residue lightly with isopropyl alcohol and a old toothbrush
+![step4](meta/DSC02559-min.JPG)
 1. Fit the male-to-male header pins between the 2004a display and the PCB, with the longer side facing up
+![step5](meta/DSC02565-min.JPG)
+![step6](meta/DSC02566-min.JPG)
 1. Applying pressure to the left and top sides of the PCB and 2004a display, apply flux and solder the 2 pins of the opposing sides on the PCB. 
     1. Hint: They should be alligned with the holes on the board
+![step7](meta/DSC02573-min.JPG)
 1. Flip over the board, applying pressure on the same sides, and do the same on the 2004a display side.
-1. Solder in the rest of the pins
+![step8](meta/DSC02576-min.JPG)
+1. Solder in the rest of the pins on both the display and PCB
+![step9](meta/DSC02577-min.JPG)
 1. Trim the PCB Side of the pin legs to roughly 2mm (078740157 Inches) and clean any leftover residue lightly with isopropyl alcohol and a old toothbrush
+![step10](meta/DSC02604-min.JPG)
+![step11](meta/DSC02593-min.JPG)
 1. *Optional:* In some cases, you may need to trim or elongate the wires for the USB-PD Connector, recommendation is to measure and cut, remove old wire connectors from board, and tin the ends before inserting and screwing into terminal connectors
 
 ### Case
@@ -155,6 +168,12 @@ Soldering guide assumes minimal soldering experience and only through hole const
 - Display the Card Number and Facility Code for each card scanned on the 2004a display
 - Web Interface shows all data in Last Swiped Cards 
 - Web Interface CTF Board will show HEX of cards swiped
+
+## Screenshots
+
+![Last Read Card Info](https://github.com/evildaemond/doorsim/blob/main/meta/firefox_sqk2iyN0NH.png)
+![CTF Display](https://github.com/evildaemond/doorsim/blob/main/meta/firefox_SsNUgBIJY4.png)
+![Settings Menu](https://github.com/evildaemond/doorsim/blob/main/meta/firefox_tcPkSL7II0.png)
 
 
 ## Acknowledgements
