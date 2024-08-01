@@ -1,10 +1,6 @@
 # doorsim
 
-An Open-Source Door Simulator for PACS Training
-
-## Description
-
-The DoorSim is a Open Source PACS (Physical Access Control System) built for research, training, and CTFs on RFID and Physical Security.
+The DoorSim is a Open Source PACS (Physical Access Control System) built for research, training, and CTFs on RFID and Physical Security. 
 
 ## Features
 
