@@ -63,6 +63,7 @@ int ledValid;
 
 // Custom Display Message
 String customWelcomeMessage;
+String welcomeMessageSelect;
 
 // decoded facility code and card code
 unsigned long facilityCode = 0;
@@ -664,6 +665,7 @@ void saveSettingsToPreferences() {
   preferences.putInt("spkOnValid", spkOnValid);
   preferences.putInt("ledValid", ledValid);
   preferences.putString("customWelcomeMessage", customWelcomeMessage);
+  preferences.putString("welcomeMessageSelect", welcomeMessageSelect);
   preferences.end();
 }
 
@@ -680,6 +682,7 @@ void loadSettingsFromPreferences() {
   spkOnValid = preferences.getInt("spkOnValid",1);
   ledValid = preferences.getInt("ledValid",1);
   customWelcomeMessage = preferences.getString("customWelcomeMessage","");
+  welcomeMessageSelect = preferences.getString("welcomeMessageSelect","default");
   preferences.end();
 }
 
@@ -1033,9 +1036,10 @@ void processHIDCard() {
       cardChunk2Offset = 9;
       break;
 
+    // modified to wiegand 32 bit format instead of HID
     case 32:
-      facilityCode = decodeHIDFacilityCode(1, 13);
-      cardNumber = decodeHIDCardNumber(13, 31);
+      facilityCode = decodeHIDFacilityCode(5, 16);
+      cardNumber = decodeHIDCardNumber(17, 32);
       cardChunk1Offset = 8;
       bitHolderOffset = 14;
       cardChunk2Offset = 10;
@@ -1080,6 +1084,7 @@ void processHIDCard() {
 
   setCardChunkBits(cardChunk1Offset, bitHolderOffset, cardChunk2Offset);
   hexCardData = String(cardChunk1, HEX) + prefixPad(String(cardChunk2, HEX), '0', 6);
+  //hexCardData = String(cardChunk1, HEX) + String(cardChunk2, HEX);
 }
 
 void processCardData() {
@@ -1285,7 +1290,8 @@ void setup() {
       ap_passphrase = jsonObj["apPassphrase"] | "";
       ap_channel = jsonObj["apChannel"] | 1;
       ssid_hidden = jsonObj["ssidHidden"] | 0;
-      customWelcomeMessage = (jsonObj["welcomeMessageSelect"] | "default") == "custom" ? jsonObj["customMessage"] | "" : "";
+      welcomeMessageSelect = jsonObj["welcomeMessageSelect"] | "default";
+      customWelcomeMessage = jsonObj["customMessage"] | "";
       spkOnInvalid = jsonObj["spkOnInvalid"] | 1;
       spkOnValid = jsonObj["spkOnValid"] | 1;
       ledValid = jsonObj["ledValid"] | 1;
