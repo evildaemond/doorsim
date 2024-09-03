@@ -139,7 +139,7 @@ Soldering guide assumes minimal soldering experience and only through hole const
 
 - Accessable via Wifi Network Broadcasting on ESP32
     - Can be configured via the Settings menu on the Web Interface
-- Browse to `https://192.168.4.1`
+- Browse to `http://192.168.4.1`
 - Last Swiped Card Interface, displaying card information
     - Hint: Click on the Hex Code for the Card to copy it to clipboard
 - CTF Board will show the CTF interface, alongside the additional cards to be added, and the last swiped cards
