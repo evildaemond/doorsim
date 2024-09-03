@@ -94,9 +94,10 @@ Soldering guide assumes minimal soldering experience and only through hole const
 1. Install Arduino IDE
 1. Install Requirements
     1. ESP32 Board Manager
-    2. AsyncJson
-    3. ESPAsyncWebServer
-    4. LiquidCrystal_I2C
+    2. [ArdunioJson by Benoit Blanchon](https://arduinojson.org/)
+    3. [AsyncTCP by dvarrel](https://github.com/dvarrel/AsyncTCP)
+    4. [ESPAsyncWebServer by Me-No-Dev](https://github.com/mathieucarbou/ESPAsyncWebServer)
+    5. [LiquidCrystal_I2C](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 1. Git Clone and Open File
 1. Choose Board, Choose Port
 1. Click Upload
