@@ -54,6 +54,10 @@ The DoorSim is a Open Source PACS (Physical Access Control System) built for res
 |4|M3x10 Round Head Screw||
 |4|M4x10 Flat Head Screw||
 
+### RFID Reader
+
+The design of the DoorSim at this stage means you can use any RFID Reader which supports Wiegand Output. The only difference will be the 3d printed case you house the doorsim in, only if you intend to use it as a non-handheld version. 
+
 ## Build Steps
 
 ### Soldering
